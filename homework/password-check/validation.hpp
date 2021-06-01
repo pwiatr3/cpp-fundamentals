@@ -12,7 +12,7 @@ enum ErrorCode {Ok,
                 };
 
 bool isspecial(char ch);
-std::string getErrorMessage(ErrorCode errCode);
-bool doPasswordsMatch(std::string password1, std::string password2);
-ErrorCode checkPasswordRules(std::string password);
-ErrorCode checkPassword(std::string password1, std::string password2);
+std::string getErrorMessage(const ErrorCode& errCode);
+bool doPasswordsMatch(const std::string& password1, const std::string& password2);
+ErrorCode checkPasswordRules(const std::string& password);
+ErrorCode checkPassword(const std::string& password1, const std::string& password2);
